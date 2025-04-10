@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content | Frik Gamerz</title>
+    <link rel="stylesheet" href="content.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="head-left">
+                <img src="photo/logo.png" alt="logo">
+                <button onclick="window.open('https://www.youtube.com/@FrikGamerz?sub_confirmation=1', '_blank')">Subscribe</button>
+            </div>
+
+            <div class="head-right">
+                <P><a href="frik.html">HOME</a></P>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="content.html">CONTENT</a></p>
+                <p><a href="contact.html">CONTACT US</a></p>
+            </div>
+        </header>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h1>Our Gaming Content</h1>
+            <p>Explore the best gaming videos curated just for you! Click to watch the magic unfold.</p>
+
+            <div class="video-gallery">
+                <div class="video-item">
+                    <img src="photo/thum1.jpg" alt="Video 1 Thumbnail">
+                    <button onclick="openPopup('https://youtu.be/oGZ64-MbAJs')">Watch Video</button>
+                </div>
+
+                <div class="video-item">
+                    <img src="photo/thumb2.jpg" alt="Video 2 Thumbnail">
+                    <button onclick="openPopup('https://youtu.be/7Co7gG1-Rkw')">Watch Video</button>
+                </div>
+
+                <div class="video-item">
+                    <img src="photo/thumb3.jpg" alt="Video 3 Thumbnail">
+                    <button onclick="openPopup('https://youtube.com/live/PjFwn_iZvF4?feature=share')">Watch Video</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Frik Gamerz &copy; 2025 All rights reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+            <p>Privacy Policy</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to open YouTube videos in a popup window
+        function openPopup(url) {
+            window.open(url, '_blank', 'width=800,height=600');
+        }
+    </script>
+</body>
+</html>

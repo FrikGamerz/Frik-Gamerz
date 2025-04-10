@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color: #4b4b4b5b;
+    backdrop-filter: blur(10px);
+
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.head-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #edff66;
+}
+
+.head-left button{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.head-left button:hover{
+   opacity: 0.7;
+
+}
+
+.head-right{
+    display: flex;
+}
+
+.head-right a{
+    text-decoration: none;
+    padding-left: 25px;
+    color: white;
+    font-size: 15px;
+    
+}
+
+/* Content section */
+.content-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #1c1f24;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.video-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.video-item button:hover {
+    background-color: #3a9f45;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f1517;
+    color: #ffffff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer ul li a:hover {
+    color: #4CAF50;
+}

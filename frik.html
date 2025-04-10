@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="frik.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="audio/gorila-315977.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. Please update your browser or use a compatible one.
+    </audio>
+    
+    <script>
+        const music = document.getElementById('background-music');
+window.onload = () => {
+    music.play().catch(error => console.error('Autoplay blocked:', error));
+};
+    </script>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <img src="photo/logo.png" alt="logo">
+                <button onclick="window.open('https://www.youtube.com/@FrikGamerz?sub_confirmation=1', '_blank')">Subscribe</button>
+            </div>  
+
+           <div class="head-right">
+            <P><a href="frik.html">HOME</a></P>
+            <p><a href="about.html">ABOUT</a></p>
+            <p><a href="content.html">CONTENT</a></p>
+            <p><a href="contact.html">CONACT US</a></p>
+           </div>
+        </header>
+
+        <section class="hero-section" autoBlur>
+            <div class="hero-video">
+                <video loop autoplay muted plays-inline class="hero-video">
+                    <source src="videos/welcome.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-info">
+                    <h1>FRIK GAMERz</h1>
+                    <p>Welcome to Our Gaming World</p>
+                    <p>Level up your gaming experience</p>
+                    <button onclick="window.open('https://www.youtube.com/@FrikGamerz', '_blank')">YOUTUBE</button>
+                </div>
+
+                <h1 class="gaming-text">Gaming</h1>
+                <div class="next-btn">
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <p>Welcome to Frik Gmerz</p>
+            <h1>DISCOVER THE WORLS'S MOST INTERESTING GAMES</h1>
+
+            <div class="image-box">
+                <img src="photo/about.png" alt="about-img" srcset="">
+            </div>
+            <h4>Your adventure begins here—unlock boundless realms, forge legendary alliances, and shape the future of gaming as you explore a universe without limits</h4>
+            <h5>Frik Gamerz unites every player from countless games and platforms</h5>
+        </section>
+
+        <section class="info selection">
+            <h3>Into the MetaGame Layer</h3>
+            <p>A cutting-edge cross-platform metagame app that transforms your activities across Web2 and Web3 games into immersive real-world experiences, redefining the boundaries of gaming</p>
+
+            <div class="info-cards">
+                <div class="card">
+                    <h1>MINECRAFT</h1>
+                    <p>In Minecraft, players explore vast biomes, mine precious resources, build towering structures, and unleash their creativity to survive adventurous challenges.</p>
+                
+                    <video src="videos/minecraft.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+
+                <div class="card">
+                    <h2>CAR FOR SALEs</h2>
+                    <p>Drive, trade, win!</p>
+                
+                    <video src="videos/" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div> 
+
+                <div class="card">
+                    <h1>BGMI</h1>
+                    <p>Survive, loot, dominate!" A perfect fit for the thrill of Battlegrounds Mobile India (BGMI)</p>
+                
+                    <video src="videos/bgmi.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+
+                <div class="card">
+                    <h1>VALORANT</h1>
+                    <p>Strategize, aim, conquer!" Perfectly encapsulates the essence of Valorant.</p>
+                
+                    <video src="videos/valorant.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+
+
+                <div class="card">
+
+                    <video src="videos/truck.mp4" autoplay loop muted plays-inline></video>
+                </div>
+
+
+                <div class="card">
+                <h1>MORE COMING SOON</h1>
+                </div>
+            </div>
+
+            <section class="contact-section">
+                <p>Join Frik Gamerz</p>
+                <h1>LET'S BUILD THE NEW ERA OF GAMING TOGETHER</h1>
+                <button onclick="window.location.href='contact.html';">CONTACT US</button>
+                <img class="img1" src="img/swordman.webp" alt="contact-img">
+                <img class="img2" src="img/contact-1.webp" alt="contact-img">
+                <img class="img3" src="img/contact-2.webp" alt="contact-img">
+
+            </section>
+
+            <section class="footer">
+                <p>Frik Gamerz &copy; 2025 All rights reserved</p>
+                <ul>
+                    <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href=""><i class='bx bxl-facebook' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-youtube' ></i></a></li>
+                </ul>
+                <p>Privacy Policy</p>
+            </section>
+        </section>
+    </div>
+
+    <script src="frik.js"></script>
+</body>
+</html>

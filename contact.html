@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Frik Gamerz</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="head-left">
+                <img src="photo/logo.png" alt="logo">
+                <button onclick="window.open('https://www.youtube.com/@FrikGamerz?sub_confirmation=1', '_blank')">Subscribe</button>
+            </div>
+
+            <div class="head-right">
+                <p><a href="frik.html">HOME</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="content.html">CONTENT</a></p>
+                <p><a href="contact.html">CONTACT US</a></p>
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Fill out the form below and we'll respond promptly!</p>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Images in the Contact Section -->
+        <div class="contact-images">
+            <img src="photo/contact1.jpg" alt="Contact Image 1">
+            <img src="photo/contact2.jpg" alt="Contact Image 2">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Frik Gamerz &copy; 2025 All rights reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+            <p>Privacy Policy</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+            };
+
+            // Replace with your Google Apps Script URL
+            const scriptURL = 'https://docs.google.com/spreadsheets/d/1d6WcEkuPg2NoIM1FUmMr0hFie5HlJPiilj8pM3eQVWI/edit?usp=sharing';
+
+            try {
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    form.reset();
+                } else {
+                    alert('Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                alert('Error connecting to the server!');
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

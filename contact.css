@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 999;
+    background-color: #4b4b4b5b;
+    backdrop-filter: blur(10px);
+
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.head-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #edff66;
+}
+
+.head-left button{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.head-left button:hover{
+   opacity: 0.7;
+
+}
+
+.head-right{
+    display: flex;
+}
+
+.head-right a{
+    text-decoration: none;
+    padding-left: 25px;
+    color: white;
+    font-size: 15px;
+    
+}
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    background-color: #0f1517;
+    color: #ffffff;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Images in the contact section */
+.contact-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact-images img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f1517;
+    color: #ffffff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}

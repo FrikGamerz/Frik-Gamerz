@@ -506,3 +506,8 @@ margin-bottom: 100px;
         opacity: 0;
     }
 }
+
+.img1{
+    border_radius: 15px;
+    color: #ffffff;
+}

@@ -507,65 +507,66 @@ margin-bottom: 100px;
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        scroll-behavior: auto;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .hero-info h1 {
-        font-size: 70px;
-    }
-
-    .hero-info p {
-        font-size: 20px;
-    }
-
-    .gaming-text {
-        font-size: 70px;
-        right: 10px;
-        bottom: 20px;
-    }
-
-    .next-btn {
-        width: 150px;
-        height: 150px;
-        left: 35%;
-        bottom: 50%;
-    }
-
-    .about-section h1 {
-        font-size: 50px;
-    }
-
-    .about-section p {
-        font-size: 25px;
-    }
-
-    .card {
-        grid-column: span 1;
-        height: auto;
-    }
-
-    .contact-section h1 {
-        font-size: 40px;
-    }
-}
-
-.hero-info h1 {
-    font-size: 5vw; /* Dynamic font size relative to viewport width */
-}
-
-img, video {
-    max-width: 100%;
-    height: auto;
+/* Default styles for large screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .head-left img {
+        width: 80px; /* Scale logo */
+    }
+
+    .head-right p {
+        font-size: 14px; /* Adjust menu text size */
+        margin: 5px;
+    }
+
+    .hero-section {
+        flex-direction: column; /* Stack items */
+    }
+
+    .hero-info h1 {
+        font-size: 24px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .head-left img {
+        width: 50px; /* Resize logo further */
+    }
+
+    .head-right p {
+        font-size: 12px;
+    }
+
+    .hero-info h1 {
+        font-size: 18px;
+    }
+
+    .info-cards {
+        flex-wrap: wrap; /* Stack cards */
+    }
+
+    .card {
+        width: 100%; /* Full width for small screens */
+    }
 }
